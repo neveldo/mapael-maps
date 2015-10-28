@@ -1,14 +1,28 @@
 /**
  *
  * Jquery Mapael - Dynamic maps jQuery plugin (based on raphael.js)
- * Requires jQuery and raphael.js
+* Requires jQuery and Mapael
  *
  * Map of Vinnytsia Region
  *
  * @author Ievgen Sentiabov https://github.com/joni-jones
  * @source http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Vinnycya_regions.svg/574px-Vinnycya_regions.svg.png
  */
-(function ($) {
+(function (factory) {
+    if (typeof exports === 'object') {
+        // CommonJS
+        module.exports = factory(require('jquery'), require('mapael'));
+    } else if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery', 'mapael'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery, jQuery.fn.mapael);
+    }
+}(function ($, Mapael) {
+
+    "use strict";
+
     $.extend(true, $.fn.mapael,
         {
             maps: {
@@ -52,4 +66,7 @@
             }
         }
     );
-})(jQuery);
+
+    return $.fn.mapael;
+
+}));

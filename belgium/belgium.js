@@ -1,7 +1,7 @@
 /**
 *
 * Jquery Mapael - Dynamic maps jQuery plugin (based on raphael.js)
-* Requires jQuery and raphael.js
+* Requires jQuery and Mapael
 *
 * Map of Belgium with provinces and INS codes
 *
@@ -9,7 +9,21 @@
 * @source http://commons.wikimedia.org/wiki/File:Belgique_vierge.svg
 *
 */
-(function($) {
+(function (factory) {
+    if (typeof exports === 'object') {
+        // CommonJS
+        module.exports = factory(require('jquery'), require('mapael'));
+    } else if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery', 'mapael'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery, jQuery.fn.mapael);
+    }
+}(function ($, Mapael) {
+
+	"use strict";
+
 	$.extend(true, $.fn.mapael, 
 		{
 			maps : {
@@ -54,4 +68,7 @@
 			}
 		}
 	);
-})(jQuery);
+
+	return $.fn.mapael;
+
+}));
