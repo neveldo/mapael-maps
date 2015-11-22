@@ -31,23 +31,24 @@
 					width : 599.91296,
 					height : 626.66663,
 					getCoords : function (lat, lon) {
+						var xfactor, xoffset, x, yfactor, yoffset, y;
 						if (lat < 43.213183 && lat > 40.780541 && lon > 7.611694 && lon < 11.21521) {
 							// Corse
-							var xfactor = 43.64246;
-							var xoffset = 223.2912;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 43.64246;
+							xoffset = 223.2912;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -65.77758;
-							var yoffset = 3346.37839;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -65.77758;
+							yoffset = 3346.37839;
+							y = (lat * yfactor) + yoffset;
 						} else {
-							var xfactor = 45.48385;
-							var xoffset = 222.309;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 45.48385;
+							xoffset = 222.309;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -65.97284;
-							var yoffset = 3371.10748;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -65.97284;
+							yoffset = 3371.10748;
+							y = (lat * yfactor) + yoffset;
 						}
 						return {x : x, y : y};
 					},

@@ -36,68 +36,69 @@
 					width : 641.85596,
 					height : 627.08588,
 					getCoords : function (lat, lon) {
+						var xfactor, xoffset, x, yfactor, yoffset, y;
 						if (lat < 43.213183 && lat > 40.780541 && lon > 7.611694 && lon < 11.21521) {
 							// Corse
-							var xfactor = 43.64246;
-							var xoffset = 223.2912;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 43.64246;
+							xoffset = 223.2912;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -65.77758;
-							var yoffset = 3346.37839;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -65.77758;
+							yoffset = 3346.37839;
+							y = (lat * yfactor) + yoffset;
 						} else if (lat < 16.623033 && lat > 15.710307 && lon > -62.273712 && lon < -60.565338) {
 							// Guadeloupe
-							var xfactor = 86.761658287969;
-							var xoffset = 5362.7633969916;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 86.761658287969;
+							xoffset = 5362.7633969916;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -82.266584089643;
-							var yoffset = 1657.41182763;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -82.266584089643;
+							yoffset = 1657.41182763;
+							y = (lat * yfactor) + yoffset;
 						} else if (lat < 15.060189 && lat > 14.263052 && lon > -61.699448 && lon < -60.455246) {
 							// Martinique
-							var xfactor = 108.86848400636;
-							var xoffset = 6667.8264;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 108.86848400636;
+							xoffset = 6667.8264;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -102.17420080747;
-							var yoffset = 1888.497;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -102.17420080747;
+							yoffset = 1888.497;
+							y = (lat * yfactor) + yoffset;
 						} else if (lat < 6.479067 && lat > 1.241358 && lon > -55.823364 && lon < -49.308472) {
 							// Guyane
-							var xfactor = 14.877907532954;
-							var xoffset = 811.95256630287;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 14.877907532954;
+							xoffset = 811.95256630287;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -13.494388491278;
-							var yoffset = 512.14159;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -13.494388491278;
+							yoffset = 512.14159;
+							y = (lat * yfactor) + yoffset;
 						} else if (lat < -20.713731 && lat > -21.587212 && lon > 54.879227 && lon < 56.109695) {
 							// La Reunion
-							var xfactor = 81.213304068446;
-							var xoffset = -4482.39787;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 81.213304068446;
+							xoffset = -4482.39787;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -78.260903254801;
-							var yoffset = -1124.8169;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -78.260903254801;
+							yoffset = -1124.8169;
+							y = (lat * yfactor) + yoffset;
 						} else if (lat < -12.504962 && lat > -13.134316 && lon > 44.806137 && lon < 45.5793) {
 							// Mayotte
-							var xfactor = 193.03305111901;
-							var xoffset = -8691.6961;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 193.03305111901;
+							xoffset = -8691.6961;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -180.02792269821;
-							var yoffset = -1714.16093;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -180.02792269821;
+							yoffset = -1714.16093;
+							y = (lat * yfactor) + yoffset;
 						} else {
-							var xfactor = 45.48385;
-							var xoffset = 264.2620;
-							var x = (lon * xfactor) + xoffset;
+							xfactor = 45.48385;
+							xoffset = 264.2620;
+							x = (lon * xfactor) + xoffset;
 							
-							var yfactor = -65.97284;
-							var yoffset = 3371.10748;
-							var y = (lat * yfactor) + yoffset;
+							yfactor = -65.97284;
+							yoffset = 3371.10748;
+							y = (lat * yfactor) + yoffset;
 						}
 						return {x : x, y : y};
 					},
