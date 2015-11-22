@@ -1,4 +1,4 @@
-/**
+/*!
 *
 * Jquery Mapael - Dynamic maps jQuery plugin (based on raphael.js)
 * Requires jQuery and Mapael
@@ -24,7 +24,7 @@
 
 	"use strict";
 
-	$.extend(true, Mapael, 
+	$.extend(true, Mapael,
 		{
 			maps :  {
 				european_union : {
