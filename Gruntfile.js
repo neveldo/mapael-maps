@@ -1,0 +1,51 @@
+
+/* Src File listing
+Format:
+"map_dir/*.js", "!map_dir/*.min.js"
+The second part is to avoid to use the min file
+*/
+src_file_listing = [
+    'argentina/*.js', '!argentina/*.min.js',
+    'belgium/*.js', '!belgium/*.min.js',
+    'european_union/*.js', '!european_union/*.min.js',
+    'france/*.js', '!france/*.min.js',
+    'netherlands/*.js', '!netherlands/*.min.js',
+    'thailand/*.js', '!thailand/*.min.js',
+    'ukraine/*.js', '!ukraine/*.min.js',
+    'united_kingdom/*.js', '!united_kingdom/*.min.js',
+    'wales/*.js', '!wales/*.min.js'
+];
+
+module.exports = function (grunt) {
+    grunt.initConfig({
+        jshint: {
+            options: {
+                jshintrc: '.jshintrc'
+            },
+            all: src_file_listing
+        },
+        uglify: {
+            options: {
+                compress: true,
+                mangle: true,
+                preserveComments: 'some',
+                report: 'gzip'
+            },
+            build: {
+                files: [
+                    {
+                        expand: true,     // Enable dynamic expansion.
+                        src: src_file_listing,
+                        ext: '.min.js',   // Dest filepaths will have this extension.
+                        extDot: 'first'   // Extensions in filenames begin after the first dot
+                    }
+                ]
+            }
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    grunt.registerTask('default', ['jshint', 'uglify']);
+};
