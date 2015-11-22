@@ -5,7 +5,7 @@
 *
 * Map 'United Kingdom'
 
-* @author Vincent Brouté
+* @author Vincent Broutï¿½
 */
 (function (factory) {
     if (typeof exports === 'object') {
@@ -22,7 +22,7 @@
 
 	"use strict";
 
-	$.extend(true, $.fn.mapael, 
+	$.extend(true, Mapael,
 		{
 			maps :{
 				united_kingdom : {

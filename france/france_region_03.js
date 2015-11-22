@@ -24,7 +24,7 @@
 
 	"use strict";
 
-	$.extend(true, $.fn.mapael, 
+	$.extend(true, Mapael,
 		{
 			maps :  {
 				france_region_03 : {

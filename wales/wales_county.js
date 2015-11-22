@@ -23,7 +23,7 @@
 
     "use strict";
 
-    $.extend(true, $.fn.mapael,
+    $.extend(true, Mapael,
         {
             maps: {
                 wales_county: {

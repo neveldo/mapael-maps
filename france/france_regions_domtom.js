@@ -29,7 +29,7 @@
 
 	"use strict";
 
-	$.extend(true, $.fn.mapael, 
+	$.extend(true, Mapael,
 		{
 			maps :  {
 				france_regions_domtom : {

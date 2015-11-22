@@ -22,7 +22,7 @@
 
     "use strict";
 
-    $.extend(true, $.fn.mapael,
+    $.extend(true, Mapael,
         {
             maps: {
                 ukraine: {

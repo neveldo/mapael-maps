@@ -9,7 +9,7 @@
 * @source http://upload.wikimedia.org/wikipedia/commons/d/d5/Provinces_of_the_Netherlands.svg
 */
 (function($) {
-	$.extend(true, $.fn.mapael, 
+	$.extend(true, Mapael,
 		{
 			maps :  {
 				netherlands : {
