@@ -5,7 +5,7 @@
 *
 * Map 'United Kingdom'
 
-* @author Vincent Brout�
+* @author Vincent Brouté
 */
 (function (factory) {
     if (typeof exports === 'object') {
