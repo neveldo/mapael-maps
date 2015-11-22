@@ -12,6 +12,6 @@
         "define": true,   // for AMD
         "require": true,  // for CommonJS
         "module": true,   // for CommonJS
-        "exports": true,  // for CommonJS
+        "exports": true  // for CommonJS
     }
 }
