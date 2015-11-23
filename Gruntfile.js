@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                         expand: true,     // Enable dynamic expansion.
                         src: src_file_listing,
                         ext: '.min.js',   // Dest filepaths will have this extension.
-                        extDot: 'first'   // Extensions in filenames begin after the first dot
+                        extDot: 'last'   // Extensions in filenames begin after the first dot
                     }
                 ]
             }
