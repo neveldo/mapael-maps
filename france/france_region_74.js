@@ -50,6 +50,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

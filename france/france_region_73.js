@@ -55,6 +55,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

@@ -48,6 +48,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

@@ -81,6 +81,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

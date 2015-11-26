@@ -67,6 +67,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

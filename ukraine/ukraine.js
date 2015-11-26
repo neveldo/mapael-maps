@@ -71,6 +71,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

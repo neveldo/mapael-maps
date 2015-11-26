@@ -136,6 +136,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));
