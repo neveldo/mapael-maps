@@ -60,6 +60,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

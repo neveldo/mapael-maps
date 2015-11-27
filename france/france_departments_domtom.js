@@ -210,6 +210,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

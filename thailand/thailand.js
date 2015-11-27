@@ -129,6 +129,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));

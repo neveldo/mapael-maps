@@ -99,6 +99,4 @@
         }
     );
 
-    return $.fn.mapael;
-
 }));
