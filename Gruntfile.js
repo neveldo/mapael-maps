@@ -13,7 +13,8 @@ src_file_listing = [
     'thailand/*.js', '!thailand/*.min.js',
     'ukraine/*.js', '!ukraine/*.min.js',
     'united_kingdom/*.js', '!united_kingdom/*.min.js',
-    'wales/*.js', '!wales/*.min.js'
+    'wales/*.js', '!wales/*.min.js',
+    'scandinavia/*.js', '!scandinavia/*.min.js'
 ];
 
 module.exports = function (grunt) {
