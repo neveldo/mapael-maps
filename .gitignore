@@ -2,3 +2,4 @@
 .fuse_hidden*
 .idea
 /node_modules
+/algeria/svg
