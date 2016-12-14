@@ -30,9 +30,14 @@
                     width: 592,
                     height: 801,
                     getCoords: function (lat, lon) {
-                        // @TODO
-                        // Implement the required code to convert the lat / lon to x / y coordinates
-                        return {'x': lat, 'y': lon};
+                        var xfactor = 67.356445210811
+                          , xoffset = -403.60252961681
+                          , x = (lon * xfactor) + xoffset
+                          , yfactor = -102.2294662758
+                          , yoffset = 5633.5048436609
+                          , y = (lat * yfactor) + yoffset;
+
+                        return {'x' : x, 'y' : y};
                     },
                     elems: {
                         //Thüringen
