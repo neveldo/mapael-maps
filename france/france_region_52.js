@@ -12,13 +12,13 @@
 (function (factory) {
     if (typeof exports === 'object') {
         // CommonJS
-        module.exports = factory(require('jquery'), require('mapael'));
+        module.exports = factory(require('jquery'), require('jquery-mapael'));
     } else if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
         define(['jquery', 'mapael'], factory);
     } else {
         // Browser globals
-        factory(jQuery, jQuery.fn.mapael);
+        factory(jQuery, jQuery.mapael);
     }
 }(function ($, Mapael) {
 
@@ -51,5 +51,7 @@
             }
         }
     );
+
+    return Mapael;
 
 }));

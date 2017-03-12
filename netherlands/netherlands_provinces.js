@@ -8,7 +8,21 @@
 *
 * @source http://upload.wikimedia.org/wikipedia/commons/d/d5/Provinces_of_the_Netherlands.svg
 */
-(function($) {
+(function (factory) {
+    if (typeof exports === 'object') {
+        // CommonJS
+        module.exports = factory(require('jquery'), require('jquery-mapael'));
+    } else if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery', 'mapael'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery, jQuery.mapael);
+    }
+}(function ($, Mapael) {
+
+    "use strict";
+
     $.extend(true, Mapael,
         {
             maps :  {
@@ -38,4 +52,7 @@
             }
         }
     );
-})(jQuery);
+
+    return Mapael;
+
+}));
