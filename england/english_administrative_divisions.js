@@ -3,9 +3,10 @@
  * Jquery Mapael - Dynamic maps jQuery plugin (based on raphael.js)
  * Requires jQuery and Mapael >=2.0.0
  *
- * Map of english_administrative_divisions
+ * Map of English administrative divisions
  * 
  * @author rob crowther
+ * @source : https://commons.wikimedia.org/wiki/File:English_administrative_divisions_2010.svg?uselang=en-gb
  */
 (function (factory) {
     if (typeof exports === 'object') {
