@@ -29,16 +29,16 @@
                 croatia : {
                     width : 959.54797,
                     height : 937.711,
-                    getCoords : function (lat, lon) {
+                    getCoords: function (lat, lng) {
                         
-                        var minLat = 5.919298,
-                        maxLat = 9.835597,
-                        minY = 0.266,
-                        maxY = 778.740,
-                        minLng = 79.650373,
-                        maxLng =  81.878378,
-                        minX = 0.256,
-                        maxX = 440.744;
+                        var minLat = 42.392395,
+                        maxLat = 46.554548,
+                        minY = 1.607,
+                        maxY = 937.711,
+                        minLng = 13.489708,
+                        maxLng =  19.445323,
+                        minX = 1.607,
+                        maxX = 959.54797;
 
                         var x = ((lng - minLng) / (maxLng - minLng)) * (maxX - minX);
                         var y = maxY - (((lat - minLat) / (maxLat - minLat)) * (maxY - minY));
