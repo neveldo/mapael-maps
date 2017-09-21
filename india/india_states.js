@@ -21,7 +21,7 @@
 }(function ($, Mapael) {
 
     "use strict";
-    $.extend(true, $.fn.mapael,
+    $.extend(true, Mapael,
         {
             maps :  {
                 india_states : {
