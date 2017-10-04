@@ -173,4 +173,7 @@
             }
         }
     );
-})(jQuery);
+
+    return Mapael;
+
+}));
