@@ -7,6 +7,7 @@
  * Lambert Conformal Conic Projection
  * 2016-04-06
  * @author Cabalist
+ * @source Wikicommons
  */
 (function (factory) {
     if (typeof exports === 'object') {
