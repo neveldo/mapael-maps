@@ -6,10 +6,24 @@
  * Map of Canada
  * Lambert Conformal Conic Projection
  * 2016-04-06
+* @author Cabalist
  */
+(function (factory) {
+    if (typeof exports === 'object') {
+        // CommonJS
+        module.exports = factory(require('jquery'), require('jquery-mapael'));
+    } else if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery', 'mapael'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery, jQuery.mapael);
+    }
+}(function ($, Mapael) {
 
-(function ($) {
-    $.extend(true, $.fn.mapael,
+    "use strict";
+
+    $.extend(true, Mapael,
         {
             maps: {
                 canada: {
