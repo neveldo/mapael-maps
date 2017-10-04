@@ -6,7 +6,7 @@
  * Map of Canada
  * Lambert Conformal Conic Projection
  * 2016-04-06
- * @author Cabalist
+ * @author Ryan Jarvis (Cabalist)
  * @source Wikicommons
  */
 (function (factory) {
