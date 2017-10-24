@@ -7,9 +7,23 @@
 
 * @author Simantha Hong
 */
-(function($) {
-	$.extend(true, $.fn.mapael, 
-		{
+(function (factory) {
+    if (typeof exports === 'object') {
+        // CommonJS
+        module.exports = factory(require('jquery'), require('jquery-mapael'));
+    } else if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery', 'mapael'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery, jQuery.mapael);
+    }
+}(function ($, Mapael) {
+
+    "use strict";
+
+    $.extend(true, Mapael,
+        {
 			maps :{
 				trinidad_and_tobago : {
 					width : 792,
@@ -69,5 +83,8 @@
 				}
 			}
 		}
-	);
-})(jQuery);
+    );
+
+    return Mapael;
+
+}));
