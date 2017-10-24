@@ -27,7 +27,7 @@
     $.extend(true, Mapael,
         {
             maps :  {
-                oe_bez : {
+                austria_districts : {
                     width : 1795,
                     height : 875,
                     getCoords : function (lat, lon) {
