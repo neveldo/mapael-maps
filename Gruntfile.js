@@ -14,6 +14,7 @@ src_file_listing = [
     'european_union/*.js', '!european_union/*.min.js',
     'france/*.js', '!france/*.min.js',
     'germany/*.js', '!germany/*.min.js',
+    'laos/*.js', '!laos/*.min.js',
     'india/*.js', '!india/*.min.js',
     'mexico/*.js', '!mexico/*.min.js',
     'netherlands/*.js', '!netherlands/*.min.js',
