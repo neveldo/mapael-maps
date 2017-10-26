@@ -30,12 +30,12 @@
                     width: 592,
                     height: 801,
                     getCoords: function (lat, lon) {
-                        var xfactor = 67.356445210811
-                          , xoffset = -403.60252961681
-                          , x = (lon * xfactor) + xoffset
-                          , yfactor = -102.2294662758
-                          , yoffset = 5633.5048436609
-                          , y = (lat * yfactor) + yoffset;
+                        var xfactor = 64.231908437415,
+                          xoffset = -377.90181740496,
+                          x = (lon * xfactor) + xoffset,
+                          yfactor = -102.05323203605,
+                          yoffset = 5617.9125521016,
+                          y = (lat * yfactor) + yoffset;
 
                         return {'x' : x, 'y' : y};
                     },
