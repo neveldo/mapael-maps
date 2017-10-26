@@ -5,16 +5,27 @@ Format:
 The second part is to avoid to use the min file
 */
 src_file_listing = [
+    'algeria/*.js', '!algeria/*.min.js',
     'argentina/*.js', '!argentina/*.min.js',
     'belgium/*.js', '!belgium/*.min.js',
+    'canada/*.js', '!canada/*.min.js',
+    'croatia/*.js', '!croatia/*.min.js',
+    'england/*.js', '!england/*.min.js',
     'european_union/*.js', '!european_union/*.min.js',
     'france/*.js', '!france/*.min.js',
+    'germany/*.js', '!germany/*.min.js',
+    'laos/*.js', '!laos/*.min.js',
+    'india/*.js', '!india/*.min.js',
+    'mexico/*.js', '!mexico/*.min.js',
     'netherlands/*.js', '!netherlands/*.min.js',
+    'poland/*.js', '!poland/*.min.js',
+    'scandinavia/*.js', '!scandinavia/*.min.js',
+    'thailand/*.js', '!thailand/*.min.js',
+    'srilanka/*.js', '!srilanka/*.min.js',
     'thailand/*.js', '!thailand/*.min.js',
     'ukraine/*.js', '!ukraine/*.min.js',
     'united_kingdom/*.js', '!united_kingdom/*.min.js',
-    'wales/*.js', '!wales/*.min.js',
-    'scandinavia/*.js', '!scandinavia/*.min.js'
+    'wales/*.js', '!wales/*.min.js'
 ];
 
 module.exports = function (grunt) {
@@ -30,7 +41,8 @@ module.exports = function (grunt) {
                 compress: true,
                 mangle: true,
                 preserveComments: 'some',
-                report: 'gzip'
+                report: 'gzip',
+                screwIE8: false
             },
             build: {
                 files: [
