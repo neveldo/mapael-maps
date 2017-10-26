@@ -30,9 +30,14 @@
                     width: 592,
                     height: 801,
                     getCoords: function (lat, lon) {
-                        // @TODO
-                        // Implement the required code to convert the lat / lon to x / y coordinates
-                        return {'x': lat, 'y': lon};
+                        var xfactor = 64.231908437415,
+                          xoffset = -377.90181740496,
+                          x = (lon * xfactor) + xoffset,
+                          yfactor = -102.05323203605,
+                          yoffset = 5617.9125521016,
+                          y = (lat * yfactor) + yoffset;
+
+                        return {'x' : x, 'y' : y};
                     },
                     elems: {
                         //Thüringen
@@ -72,7 +77,7 @@
             }
         }
     );
-
+  
     return Mapael;
 
 }));
