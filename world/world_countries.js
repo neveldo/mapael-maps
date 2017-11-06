@@ -3,7 +3,7 @@
  * Jquery Mapael - Dynamic maps jQuery plugin (based on raphael.js)
  * Requires jQuery and Mapael >=2.0.0
  *
- * Map of World countries with Antarctica
+ * Map of World countries
  *
  * Equirectangular projection
  * Uses the ISO 3166-1 alpha-2 for country names (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
@@ -33,12 +33,12 @@
                     width : 999.29852,
                     height : 392.03476,
                     getCoords : function (lat, lon) {
-                            var xfactor = 2.775076875916
-                                , xoffset = 471.505926315
-                                , x = (lon * xfactor) + xoffset
-                                , yfactor = -2.8112860731578
-                                , yoffset = 235.89691962022
-                                , y = (lat * yfactor) + yoffset;
+                        var xfactor = 2.775076875916;
+                        var xoffset = 471.505926315;
+                        var x = (lon * xfactor) + xoffset;
+                        var yfactor = -2.8112860731578;
+                        var yoffset = 235.89691962022;
+                        var y = (lat * yfactor) + yoffset;
                             
                         return {'x' : x, 'y' : y};
                     },
