@@ -5,7 +5,7 @@
  *
  * Map of uk
  * 
- * @author author name
+ * @author Coursmayeur with the help of https://github.com/roblascelles/uk-postcode-map/wiki/Cobbling-together-UK-postcode-area-data
  */
 (function (factory) {
     if (typeof exports === 'object') {
