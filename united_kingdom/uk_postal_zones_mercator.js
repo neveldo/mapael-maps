@@ -5,7 +5,7 @@
  *
  * Map of your_map_name
  * 
- * @author author name
+* @author Coursmayeur with the help of https://github.com/roblascelles/uk-postcode-map/wiki/Cobbling-together-UK-postcode-area-data
  */
 (function (factory) {
     if (typeof exports === 'object') {
@@ -25,7 +25,7 @@
     $.extend(true, Mapael,
         {
             maps :  {
-                your_map_name : {
+                uk_postcode_areas_mercator : {
                     width : 481.48761,
                     height : 996.42151,
                     getCoords : function (lat, lon) {
