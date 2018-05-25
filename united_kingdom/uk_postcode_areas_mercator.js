@@ -3,7 +3,7 @@
  * Jquery Mapael - Dynamic maps jQuery plugin (based on raphael.js)
  * Requires jQuery and Mapael >=2.0.0
  *
- * Map of your_map_name
+ * Map of uk with EPSG 3857 projection
  * 
 * @author Coursmayeur with the help of https://github.com/roblascelles/uk-postcode-map/wiki/Cobbling-together-UK-postcode-area-data
  */
