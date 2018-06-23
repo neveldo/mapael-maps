@@ -29,14 +29,14 @@
                     width: 449.70001,
                     height: 506.53201,
                     getCoords: function (lat, lng) {
-                        var minLat = 42.392395,
-                            maxLat = 46.554548,
-                            minY = 1.607,
-                            maxY = 937.711,
-                            minLng = 13.489708,
-                            maxLng = 19.445323,
-                            minX = 1.607,
-                            maxX = 959.54797;
+                        var minLat = 24.046508,
+                            maxLat = 45.521109,
+                            minY = 0,
+                            maxY = 506.532,
+                            minLng = 122.937539,
+                            maxLng = 145.815472,
+                            minX = 0,
+                            maxX = 449.700;
 
                         var x = ((lng - minLng) / (maxLng - minLng)) * (maxX - minX);
                         var y = maxY - (((lat - minLat) / (maxLat - minLat)) * (maxY - minY));
