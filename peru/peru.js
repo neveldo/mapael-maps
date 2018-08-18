@@ -35,7 +35,7 @@
     $.extend(true, Mapael,
         {
             maps :  {
-                peru_js : {
+                peru : {
                     width : 520,
                     height : 730,
                     getCoords : function (lat, lon) {
