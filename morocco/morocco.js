@@ -32,11 +32,11 @@
                     getCoords : function (lat, lng) {
                         var minLat = 21.4207341578,
                             maxLat = 35.7599881048,
-                            minY = 10,
+                            minY = 24,
                             maxY = 1210,
                             minLng = -17.104077,
                             maxLng = -1.12455115397,
-                            minX = 10,
+                            minX = 0,
                             maxX = 1133.3101;
 
                         var x = ((lng - minLng) / (maxLng - minLng)) * (maxX - minX);
