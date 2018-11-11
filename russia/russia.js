@@ -59,7 +59,7 @@ ki - Кировская область,                         Kirov Oblast
 bs - Республика Башкортостан,                   Republic of Bashkortostan
 cl - Челябинская область,                       Chelyabinsk Oblast
 ud - Удмуртская Республика,                     Udmurt Republic
-pr - Пермский край,                             Perm Krai
+pe - Пермский край,                             Perm Krai
 sv - Свердловская область,                      Sverdlovsk Oblast
 ku - Курганская область,                        Kurgan Oblast
 ko - Республика Коми,                           Komi Republic
