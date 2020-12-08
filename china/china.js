@@ -5,7 +5,7 @@
  *
  * Map of cn
  * 
- * @author Isma Cadenas
+ * @author ismael cadenas
  */
 (function (factory) {
     if (typeof exports === 'object') {
@@ -25,7 +25,7 @@
     $.extend(true, Mapael,
         {
             maps :  {
-                CN : {
+                cn : {
                     width : 1000,
                     height : 750,
                     getCoords : function (lat, lon) {
