@@ -21,5 +21,6 @@
     "grunt": "^1.0",
     "grunt-contrib-jshint": "^1.1",
     "grunt-contrib-uglify": "^2.3"
-  }
+  },
+  "version": "1.0.0"
 }
